@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACCESS - TIENDA VIRTUAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="./css/home.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ExpletusSans" />
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <style>
+      @import url('http://fonts.cdnfonts.com/css/sansation');
+</style>
+  </head>
+  <body>
+    <!-- HOME -->
+    <!-- ENCABEZADO -->
+  <header class="header">
+    <nav class="navbar bootless-margin navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid bootless-container">
+        <div class="fixed-elements-nav">
+          <a href="index.html"><img class="logo" src="/img/logo.png" alt="logo access" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+
+        <div class="collapse navbar-collapse inline-elements-nav " id="navbarText">
+          <ul class="navbar-nav  mb-2 mb-lg-0">
+            <form class="search d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search" />
+              <button class="btn btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+
+            <ul class="nav-smallscreen">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sucursales.html">SUCURSALES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="novedades.html">NOVEDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tienda.html" tabindex="-1" aria-disabled="true"><i
+                    class="fas fa-shopping-cart"></i>TIENDA VIRTUAL</a>
+              </li>
+            </ul>
+            <div class=" login-media" id="navbarSupportedContent">
+              <ul class="navbar-nav  mb-2 mb-lg-0">
+                <li class="nav-item sesion">
+                  <a class=" nav-link" aria-current="page" href="login.html"><i class="fas fa-3x fa-user"></i>Iniciar
+                    sesión</a>
+                </li>
+                <ul class="redes d-flex" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="instagram" href="#"><img class="instagram" src="/img/iconos-redes3.png"
+                        alt="instagram" /></a>
+                  </li>
+                  <li>
+                    <a class="whatsapp" href="#"><img class="whatsapp" src="/img/iconos-redes2.png"
+                        alt="whatsapp" /></a>
+                  </li>
+                  <li>
+                    <a class="facebook" href="#"><img class="facebook" src="/img/iconos-redes1.png"
+                        alt="facebook" /></a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- NAVEGADOR -->
+
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="sucursales.html">SUCURSALES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="servicios.html">SERVICIOS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="novedades.html">NOVEDADES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="tienda.html" tabindex="-1" aria-disabled="true"><i
+          class="fas fa-shopping-cart"></i>TIENDA VIRTUAL</a>
+    </li>
+  </ul>
+<!-- NOVEDADES -->
+
+    <!-- NAV DE NOVEDADES Y PAGINACION -->
+
+    <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Novedades</li>
+      </ol>
+    </nav>
+  
+      <!-- CONTENEDORES DE NOVEDADES -->
+  
+      <div class="container-fluid m-5">
+        <div class="row row-cols-2">
+          <div class="novedad col-5 bg-danger p-2 m-2">
+            <img
+              class="novedad-imagen"
+              src="//img/Auricular-jbl.png"
+              alt=""
+            />
+          </div>
+          <div class="novedad col-5 bg-dark p-2 m-2">
+            <img
+              class="novedad-imagen"
+              src="//img/IMPRESORA-HP.png"
+              alt=""
+            />
+          </div>
+          <div class="novedad col-5 bg-warning p-2 m-2">
+            <img
+              class="novedad-imagen"
+              src="//img/parlante-jbl1.png"
+              alt=""
+            />
+          </div>
+          <div class="novedad col-5 bg-success p-2 m-2">
+            <img
+              class="novedad-imagen"
+              src="//img/pibe-de-fondo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+  
+      <!-- NOVEDADES POR DENTRO -->
+  
+      <!-- NAV DE NOVEDADES Y PAGINACION -->
+  
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            >INICIO / NOVEDADES ORDENAR POR: PRECIOS >> 1 2 3</a
+          >
+        </div>
+      </nav>
+  
+      <!-- NOVEDADES DESARROLLO DE INFO -->
+      <div class="container-fluid pt-2">
+        <div class="card container-fluid" style="width: 90%">
+          <img
+            src="//img/pibe-de-fondo.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- NOVEDADES DE NUEVOS PRODUCTOS CON LINK A LA TIENDA -->
+      <div class="slider">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card" style="width: 18rem;">
+                <img src="//img/Auricular-jbl.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div>
+    <img
+      class="logo-blanco"
+      src="//img/logo-blanco.png"
+      alt="access"
+    />
+  </div>
+
+  <ul class="row">
+    <li>
+      <h5>Mapa del Sitio</h5>
+
+      <ul>
+        <li>NOSOTROS</li>
+        <li>SUCURSALES</li>
+        <li>SERVICIOS</li>
+        <li>NOVEDADES</li>
+        <li>TIENDA VIRTUAL</li>
+      </ul>
+    </li>
+
+    <li>
+      <h5>Dirección</h5>
+      <p>Rivadavia, W.Nuñez 597, Tel: (0263) 4445900 - 4445901</p>
+          <p>Junin, Av. Mitre 8, Tel: (0263) 4498375</p>
+          <p>San Martin, 25 de Mayo 252, Tel: (0263) 4428808 - 4420051</p>
+    </li>
+  </ul>
+
+  <p>Copyright © All Rights Reserved</p>
+</footer>
+</body>
+</html>

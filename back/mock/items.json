@@ -1,0 +1,154 @@
+[
+  {
+    "id": "250000000012008",
+    "image": {
+      "img1": "Publicar250000000012008_A.JPG",
+      "img2": "Publicar250000000012008_B.JPG",
+      "img3": "Publicar250000000012008_H.JPG"
+    },
+    "title": "MOUSE GENIUS DX-110 USB",
+    "marca": "GENIUS",
+    "details": "",
+    "precio": 230.0,
+    "instock": 401.0
+  },
+  {
+    "id": "270000000000928",
+    "image": {
+      "img1": "Publicar270000000000928_A.JPG"
+    },
+    "title": "TABLET AMAZON FIRE 10' 32GB + 64GB",
+    "marca": "AMAZON",
+    "details": "",
+    "precio": 16990.0,
+    "instock": 1.0
+  },
+  {
+    "id": "300000000001216",
+    "image": {
+      "img1": "Publicar300000000001216_A.JPG"
+    },
+    "title": "IMPRESORA EPSON MULTIFUNCION L3250",
+    "marca": "EPSON",
+    "details": "",
+    "precio": 42999.0,
+    "instock": 0.0
+  },
+  {
+    "id": "570000000000121",
+    "image": {
+      "img1": "Publicar570000000000121_A.JPG",
+      "img2": "Publicar570000000000121_B.JPG",
+      "img3": "Publicar570000000000121_C.JPG"
+    },
+    "title": "CELULAR NOKIA 2.3",
+    "marca": "NOKIA",
+    "details": "",
+    "precio": 16990.0,
+    "instock": 5.0
+  },
+  {
+    "id": "250000000013230",
+    "image": {
+      "img1": "Publicar250000000013230_A.JPG",
+      "img2": "Publicar250000000013230_F.JPG",
+      "img3": "Publicar250000000013230_K.JPG"
+    },
+    "title": "CHROMECAST 3",
+    "marca": "",
+    "details": "Esto producto se utiliza por el puerto HDMI de cualquier televisor y convertirlo en SMART",
+    "precio": 6590.0,
+    "instock": 25.0
+  },
+  {
+    "id": "250000000000451",
+    "image": {
+      "img1": "Publicar250000000000451_A.JPG",
+      "img2": "Publicar250000000000451_B.JPG"
+    },
+    "title": "MOUSE GENIUS MINI TRAVELER RED",
+    "marca": "GENIUS",
+    "details": "",
+    "precio": 288.0,
+    "instock": 9.0
+  },
+  {
+    "id": "250000000012010",
+    "image": {
+      "img1": "Publicar250000000012010_A.JPG"
+    },
+    "title": "CAMARA NIKON D3300",
+    "marca": "NIKOM",
+    "details": "Capture cada momento especial en la calidad real que se merece, ¡y diviértase haciéndolo! Con su lente con zoom incluido, el nuevo y ultra compacto AF-S DX NIKKOR 18-55 mm f / 3.5-5.6G VR II, el D3300 es un HD-SLR pequeño y fácil de usar. Capture hermosas fotos de 24.2 MP y videos Full HD de 1080p con colores vibrantes y fondos suavemente borrosos, luego compártalos al instante con su teléfono inteligente compatible y el adaptador inalámbrico WU-1a opcional.",
+    "precio": 55553.0,
+    "instock": 2.0
+  },
+  {
+    "id": "270000000000919",
+    "image": {
+      "img1": "Publicar270000000000919_A.JPG",
+      "img2": "Publicar270000000000919_B.JPG"
+    },
+    "title": "NOTEBOOK ASUS M509 RYZEN 3 15.6, 4GB,1TB",
+    "marca": "ASUS",
+    "details": "",
+    "precio": 69990.0,
+    "instock": 1.0
+  },
+  {
+    "id": "200000000001745",
+    "image": {
+      "img1": "Publicar200000000001745_A.JPG",
+      "img2": "Publicar200000000001745_B.JPG"
+    },
+    "title": "MONITOR SAMSUNG 19 LED",
+    "marca": "SAMSUNG",
+    "details": "",
+    "precio": 18331.25,
+    "instock": 7295.0
+  },
+  {
+    "id": "300000000001122",
+    "image": {
+      "img1": "Publicar300000000001122_A.JPG"
+    },
+    "title": "IMPRESORA BROTHER HL-1212W + TONER",
+    "marca": "BROTHER",
+    "details": "",
+    "precio": 28999.0,
+    "instock": 4.0
+  },
+  {
+    "id": "270000000000937",
+    "image": {
+      "img1": "Publicar270000000000937_A.JPG"
+    },
+    "title": "PC AIO HP 205 G3 19.5' A4-4GB-1TB",
+    "marca": "HP",
+    "details": "",
+    "precio": 60490.0,
+    "instock": 2.0
+  },
+  {
+    "id": "270000000000883",
+    "image": {
+      "img1": "Publicar270000000000883_A.JPG"
+    },
+    "title": "PC CX MINI VENUS I3-120GB-4GB",
+    "marca": "CX",
+    "details": "",
+    "precio": 37990.0,
+    "instock": 6.0
+  },
+  {
+    "id": "200000000002519",
+    "image": {
+      "img1": "Publicar200000000002519_A.JPG"
+    },
+    "title": "PENDRIVE 32GB KINGSTON DTX EXODIA",
+    "marca": "KINGSTON",
+    "details": "",
+    "precio": 700.0,
+    "instock": 57.0
+  }
+]

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACCESS - TIENDA VIRTUAL</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/carrito.css">
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 768px)"
+      href="./css/home.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./script/tienda.js"></script>
+    <script defer src="./script/productos.js"></script>
+    <style>
+      @import url('http://fonts.cdnfonts.com/css/sansation');
+</style>
+  </head>
+  <body>
+    <!-- TIENDA VIRTUAL -->
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+      <nav class="navbar bootless-margin navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid bootless-container">
+          <div class="fixed-elements-nav">
+            <a href="index.html"
+              ><img
+                class="logo"
+                src="./img/logo.png"
+                alt="logo access"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div
+            class="collapse navbar-collapse inline-elements-nav"
+            id="navbarText"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <form class="search d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  id="formulario"
+                  placeholder="Buscar producto"
+                  />
+                <button id="boton" class="btn btn" type="button">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+
+              <ul class="nav-smallscreen">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="nosotros.html"
+                    >NOSOTROS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sucursales.html">SUCURSALES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="novedades.html">NOVEDADES</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="tienda.html"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    ><i class="fas fa-shopping-cart"></i>TIENDA VIRTUAL</a
+                  >
+                </li>
+              </ul>
+              <div class="login-media" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item sesion">
+                    <a class="nav-link" aria-current="page" href="login.html"
+                      ><i class="fas fa-3x fa-user"></i>Iniciar sesión</a
+                    >
+                  </li>
+                  <ul class="redes d-flex" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="instagram" href="#"
+                        ><img
+                          class="instagram"
+                          src="./img/iconos-redes3.png"
+                          alt="instagram"
+                      /></a>
+                    </li>
+                    <li>
+                      <a class="whatsapp" href="#"
+                        ><img
+                          class="whatsapp"
+                          src="./img/iconos-redes2.png"
+                          alt="whatsapp"
+                      /></a>
+                    </li>
+                    <li>
+                      <a class="facebook" href="#"
+                        ><img
+                          class="facebook"
+                          src="./img/iconos-redes1.png"
+                          alt="facebook"
+                      /></a>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- NAVEGADOR -->
+
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="nosotros.html"
+          >NOSOTROS</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sucursales.html">SUCURSALES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="servicios.html">SERVICIOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="novedades.html">NOVEDADES</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="tienda.html"
+          tabindex="-1"
+          aria-disabled="true"
+          ><i class="fas fa-shopping-cart"></i>TIENDA VIRTUAL</a
+        >
+      </li>
+    </ul>
+
+    <!-- NAV DE LA TIENDA Y PAGINACION -->
+
+    <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Tienda</li>
+      </ol>
+    </nav>
+    <!-- RESULTADO BUSCADOR -->
+    <h2 class="resultado m-3">Resultado de la busqueda</h2>
+    <ul id="resultado">      
+    </ul>
+    <!-- CATEGORIAS TIENDA -->
+    <div class="dropdown m-4 pt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        CATEGORIAS
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">INSUMOS</a></li>
+        <li><a class="dropdown-item" href="#">CARTUCHOS,CINTAS Y TONTER</a></li>
+        <li><a class="dropdown-item" href="#">INSUMO DE RECICLADO</a></li>
+        <li><a class="dropdown-item" href="#">EQUIPOS</a></li>
+        <li><a class="dropdown-item" href="#">ACCESORIOS DE EQUIPO</a></li>
+        <li><a class="dropdown-item" href="#">EQUIPOS ARMADOS/NOTEBOOK</a></li>
+        <li><a class="dropdown-item" href="#">IMPRESORAS/ESCANER</a></li>
+        <li><a class="dropdown-item" href="#">SOFTWARE</a></li>
+        <li><a class="dropdown-item" href="#">SERVICIOS</a></li>
+        <li><a class="dropdown-item" href="#">REDES</a></li>
+        <li><a class="dropdown-item" href="#">REPUESTOS VARIOS</a></li>
+        <li><a class="dropdown-item" href="#">ELECTRONICA</a></li>
+        <li><a class="dropdown-item" href="#">TELEFONOS</a></li>
+        <li><a class="dropdown-item" href="#">CELULARES</a></li>
+        <li><a class="dropdown-item" href="#">SEGURIDAD Y VIGILANCIA</a></li>
+        <li><a class="dropdown-item" href="#">CALCULADORAS</a></li>
+        <li><a class="dropdown-item" href="#">MUEBLES</a></li>
+        <li><a class="dropdown-item" href="#">MARROQUINERIA</a></li>
+
+      </ul>
+    </div>
+    <!-- START SECTION STORE -->
+    <section class="store">
+      <div class="container">
+          <div class="items">
+  </div>
+  </section>
+    <!-- END SECTION STORE -->
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+      <div class="container">
+        <h1 class="text-center">CARRITO</h1>
+        <hr />
+        <div class="row">
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6>Producto</h6>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="shopping-cart-header">
+              <h6 class="text-truncate">Precio</h6>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="shopping-cart-header">
+              <h6>Cantidad</h6>
+            </div>
+          </div>
+        </div>
+        <!-- ? START SHOPPING CART ITEMS -->
+        <div class="shopping-cart-items shoppingCartItemsContainer"></div>
+        <!-- ? END SHOPPING CART ITEMS -->
+        <!-- START TOTAL -->
+        <div class="row">
+          <div class="col-12">
+            <div class="shopping-cart-total d-flex align-items-center">
+              <p class="mb-0">Total</p>
+              <p class="ml-4 mb-0 shoppingCartTotal">$0.00</p>
+              <div
+                class="toast ml-auto bg-info"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="2000"
+              >
+                <div class="toast-header">
+                  <span>✅</span>
+                  <strong class="mr-auto ml-1 text-secondary"
+                    >Elementos en el carrito</strong
+                  >
+                  <button
+                    type="button"
+                    class="ml-2 mb-1 close"
+                    data-dismiss="toast"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="toast-body text-white">
+                  Se aumentó correctamente la cantidad
+                </div>
+              </div>
+              <button
+                class="btn btn-success ml-auto comprarButton"
+                type="button"
+                data-toggle="modal"
+                data-target="#comprarModal"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- END TOTAL -->
+        <!-- START MODAL COMPRA -->
+        <div
+          class="modal fade"
+          id="comprarModal"
+          tabindex="-1"
+          aria-labelledby="comprarModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="comprarModalLabel">
+                  Gracias por su compra
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Pronto recibirá su pedido</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END MODAL COMPRA -->
+      </div>
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div>
+        <img
+          class="logo-blanco"
+          src="./img/logo-blanco.png"
+          alt="access"
+        />
+      </div>
+
+      <ul class="row">
+        <li>
+          <h5>Mapa del Sitio</h5>
+
+          <ul>
+            <li>NOSOTROS</li>
+            <li>SUCURSALES</li>
+            <li>SERVICIOS</li>
+            <li>NOVEDADES</li>
+            <li>TIENDA VIRTUAL</li>
+          </ul>
+        </li>
+
+        <li>
+          <h5>Dirección</h5>
+          <p>Rivadavia, W.Nuñez 597, Tel: (0263) 4445900 - 4445901</p>
+          <p>Junin, Av. Mitre 8, Tel: (0263) 4498375</p>
+          <p>San Martin, 25 de Mayo 252, Tel: (0263) 4428808 - 4420051</p>
+        </li>
+      </ul>
+
+      <p>Copyright © All Rights Reserved</p>
+    </footer>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

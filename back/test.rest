@@ -1,0 +1,39 @@
+POST http://localhost:3000/items
+
+Content-Type: application/json
+
+{
+    "image": "Publicar250000000012008_A.JPG",
+    "title": "MOUSE GENIUS DX-110 USB",
+    "precio": 230.0
+}
+
+###
+
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/items
+
+###
+
+GET http://localhost:3000/img/Publicar250000000012008_A.JPG
+
+###
+
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+"image": {
+      "img1": "Publicar250000000013230_A.JPG",
+      "img2": "Publicar250000000013230_F.JPG",
+      "img3": "Publicar250000000013230_K.JPG"
+    },
+    "title": "CHROMECAST 3",
+    "marca": "",
+    "details": "Esto producto se utiliza por el puerto HDMI de cualquier televisor y convertirlo en SMART",
+    "precio": 6590.0,
+    "instock": 25.0
+  }

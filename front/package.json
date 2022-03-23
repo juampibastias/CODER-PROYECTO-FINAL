@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "alert": "^5.0.10",
+    "toastify-js": "^1.11.2"
+  }
+}
