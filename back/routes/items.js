@@ -4,12 +4,14 @@ const router = express.Router();
 //models
 const Item = require("../models/Item");
 
-//mock
-const itemsMock = require("../mock/items.json");
-
 //get items
-router.get("/", (req, res) => {
-  res.send(itemsMock);
+router.get("/", async (req, res) => {
+  try {
+    const itemsFromDB = await Item.find();
+    res.json(itemsFromDB);
+  } catch (err) {
+    res.json({ message: err.message });
+  }
 });
 
 //create item

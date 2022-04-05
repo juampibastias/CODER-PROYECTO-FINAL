@@ -10,30 +10,24 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/
+GET https://localhost/
 
 ###
 
-GET http://localhost:3000/items
+GET https://localhost/items
 
 ###
 
-GET http://localhost:3000/img/Publicar250000000012008_A.JPG
+GET https://localhost/img/Publicar250000000012008_A.JPG
 
 ###
 
-POST http://localhost:3000/items
+POST  https://localhost/register
 Content-Type: application/json
 
 {
-"image": {
-      "img1": "Publicar250000000013230_A.JPG",
-      "img2": "Publicar250000000013230_F.JPG",
-      "img3": "Publicar250000000013230_K.JPG"
-    },
-    "title": "CHROMECAST 3",
-    "marca": "",
-    "details": "Esto producto se utiliza por el puerto HDMI de cualquier televisor y convertirlo en SMART",
-    "precio": 6590.0,
-    "instock": 25.0
-  }
+"email": "raul.lujan@gmail.com",
+"password": "123456"
+}
+
+  ###

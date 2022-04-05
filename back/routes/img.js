@@ -1,15 +1,17 @@
 const express = require("express");
 const router = express.Router();
 
-const path = require('path');
+const imgIMG = "../img/"
+
+const path = require("path");
 
 //images path
-const imgFolderPath = path.join(__dirname, '../img/');
+const imgFolderPath = path.join(__dirname, imgIMG);
 
 //images
 router.get("/:imgName", (req, res) => {
-    const image = req.params.imgName;
-    res.sendFile(`${imgFolderPath}${image}`);
-  });
+  const image = req.params.imgName;
+  res.sendFile(`${imgFolderPath}${image}`);
+});
 
 module.exports = router;

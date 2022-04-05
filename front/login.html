@@ -5,161 +5,241 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACCESS - TIENDA VIRTUAL</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-      <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
     <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="./css/home.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ExpletusSans" />
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 768px)"
+      href="./css/home.css"
+    />
+    <link rel="stylesheet" href="./css/login.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <style>
-      @import url('http://fonts.cdnfonts.com/css/sansation');
-</style>
+      @import url("https://fonts.cdnfonts.com/css/sansation");
+    </style>
   </head>
   <body>
     <!-- HOME -->
     <!-- ENCABEZADO -->
-  <header class="header">
-    <nav class="navbar bootless-margin navbar-expand-lg navbar-light bg-dark">
-      <div class="container-fluid bootless-container">
-        <div class="fixed-elements-nav">
-          <a href="index.html"><img class="logo" src="./img/logo.png" alt="logo access" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
+    <header class="header">
+      <nav class="navbar bootless-margin navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid bootless-container">
+          <div class="fixed-elements-nav">
+            <a href="index.html"
+              ><img class="logo" src="./img/logo.png" alt="logo access"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
 
+          <div
+            class="collapse navbar-collapse inline-elements-nav"
+            id="navbarText"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <form class="search d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar producto"
+                  aria-label="Search"
+                />
+                <button class="btn btn" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
 
-        <div class="collapse navbar-collapse inline-elements-nav " id="navbarText">
-          <ul class="navbar-nav  mb-2 mb-lg-0">
-            <form class="search d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search" />
-              <button class="btn btn" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
-
-            <ul class="nav-smallscreen">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sucursales.html">SUCURSALES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicios.html">SERVICIOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="novedades.html">NOVEDADES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tienda.html" tabindex="-1" aria-disabled="true"><i
-                    class="fas fa-shopping-cart"></i>TIENDA VIRTUAL</a>
-              </li>
-            </ul>
-            <div class=" login-media" id="navbarSupportedContent">
-              <ul class="navbar-nav  mb-2 mb-lg-0">
-                <li class="nav-item sesion">
-                  <a class=" nav-link" aria-current="page" href="login.html"><i class="fas fa-3x fa-user"></i>Iniciar
-                    sesión</a>
+              <ul class="nav-smallscreen">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="nosotros.html"
+                    >NOSOTROS</a
+                  >
                 </li>
-                <ul class="redes d-flex" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="instagram" href="#"><img class="instagram" src="./img/iconos-redes3.png"
-                        alt="instagram" /></a>
-                  </li>
-                  <li>
-                    <a class="whatsapp" href="#"><img class="whatsapp" src="./img/iconos-redes2.png"
-                        alt="whatsapp" /></a>
-                  </li>
-                  <li>
-                    <a class="facebook" href="#"><img class="facebook" src="./img/iconos-redes1.png"
-                        alt="facebook" /></a>
-                  </li>
-                </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="sucursales.html">SUCURSALES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="novedades.html">NOVEDADES</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="tienda.html"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    ><i class="fas fa-shopping-cart"></i>TIENDA VIRTUAL</a
+                  >
+                </li>
               </ul>
-            </div>
-          </ul>
-
+              <div class="login-media" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item sesion">
+                    <a class="nav-link" aria-current="page" href="login.html"
+                      ><i class="fas fa-3x fa-user"></i>Iniciar sesión</a
+                    >
+                  </li>
+                  <ul class="redes d-flex" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="instagram" href="#"
+                        ><img
+                          class="instagram"
+                          src="./img/iconos-redes3.png"
+                          alt="instagram"
+                      /></a>
+                    </li>
+                    <li>
+                      <a class="whatsapp" href="#"
+                        ><img
+                          class="whatsapp"
+                          src="./img/iconos-redes2.png"
+                          alt="whatsapp"
+                      /></a>
+                    </li>
+                    <li>
+                      <a class="facebook" href="#"
+                        ><img
+                          class="facebook"
+                          src="./img/iconos-redes1.png"
+                          alt="facebook"
+                      /></a>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
+    </header>
+
+    <!-- NAVEGADOR -->
+
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="nosotros.html"
+          >NOSOTROS</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sucursales.html">SUCURSALES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="servicios.html">SERVICIOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="novedades.html">NOVEDADES</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="tienda.html"
+          tabindex="-1"
+          aria-disabled="true"
+          ><i class="fas fa-shopping-cart"></i>TIENDA VIRTUAL</a
+        >
+      </li>
+    </ul>
+    <!-- PAGINACION -->
+    <nav style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Inicio de sesión
+        </li>
+      </ol>
     </nav>
-  </header>
+    <!-- FORMULARIO LOGIN -->
+    <main>
+      <div class="contenedor__todo">
+        <div class="caja__trasera">
+          <div class="caja__trasera-login">
+            <h3>¿Ya tienes una cuenta?</h3>
+            <p>Inicia sesión para entrar en la página</p>
+            <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+          </div>
+          <div class="caja__trasera-register">
+            <h3>¿Aún no tienes una cuenta?</h3>
+            <p>Regístrate para que puedas iniciar sesión</p>
+            <button id="btn__registrarse">Regístrarse</button>
+          </div>
+        </div>
 
-  <!-- NAVEGADOR -->
+        <!--Formulario de Login y registro-->
+        <div class="contenedor__login-register">
+          <!--Login-->
+          <form
+            action="https://localhost/authenticate"
+            method="POST"
+            class="formulario__login"
+          >
+            <h2>Iniciar Sesión</h2>
+            <input type="email" name="mail" id="mail" placeholder="Correo Electronico" />
+            <input type="password" name="password" id="password" placeholder="Contraseña" />
+            <button type="submit" value="login">Entrar</button>
+          </form>
 
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="sucursales.html">SUCURSALES</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="servicios.html">SERVICIOS</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="novedades.html">NOVEDADES</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="tienda.html" tabindex="-1" aria-disabled="true"><i
-          class="fas fa-shopping-cart"></i>TIENDA VIRTUAL</a>
-    </li>
-  </ul>
-  <!-- PAGINACION -->
-  <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Inicio de sesión</li>
-    </ol>
-  </nav>
-  <!-- FORMULARIO LOGIN -->
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-        />
-        <div id="emailHelp" class="form-text">
-          We'll never share your email with anyone else.
+          <!--Register-->
+          <form
+            action="https://localhost/register"
+            method="POST"
+            class="formulario__register"
+          >
+            <h2>Regístrarse</h2>
+            <input type="email" id="mail" name="mail" placeholder="E-mail" />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Contraseña"
+            />
+            <button type="submit" value="Registrar Usuario">Regístrarse</button>
+          </form>
         </div>
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"
-        />
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </main>
 
-    
+    <script src="./script/login.js"></script>
 
     <!-- FOOTER -->
     <footer class="footer">
       <div>
-        <img
-          class="logo-blanco"
-          src="./img/logo-blanco.png"
-          alt="access"
-        />
+        <img class="logo-blanco" src="./img/logo-blanco.png" alt="access" />
       </div>
 
       <ul class="row">
@@ -182,7 +262,6 @@
           <p>San Martin, 25 de Mayo 252, Tel: (0263) 4428808 - 4420051</p>
         </li>
       </ul>
-
       <p>Copyright © All Rights Reserved</p>
     </footer>
   </body>

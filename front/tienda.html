@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="EN">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACCESS - TIENDA VIRTUAL</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -41,6 +43,7 @@
 
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/carrito.css">
+    <link rel="stylesheet" href="./css/carrito-flotante.css">
     <link
       rel="stylesheet"
       media="only screen and (max-width: 768px)"
@@ -62,7 +65,7 @@
     <script defer src="./script/tienda.js"></script>
     <script defer src="./script/productos.js"></script>
     <style>
-      @import url('http://fonts.cdnfonts.com/css/sansation');
+      @import url('https://fonts.cdnfonts.com/css/sansation');
 </style>
   </head>
   <body>
@@ -255,12 +258,12 @@
     <!-- START SECTION SHOPPING CART -->
     <section class="shopping-cart">
       <div class="container">
-        <h1 class="text-center">CARRITO</h1>
+        <h1 class="text-center">CARRITO DE COMPRAS</h1>
         <hr />
         <div class="row">
           <div class="col-6">
             <div class="shopping-cart-header">
-              <h6>Producto</h6>
+              <h6>Artículo</h6>
             </div>
           </div>
           <div class="col-2">
@@ -275,8 +278,12 @@
           </div>
         </div>
         <!-- ? START SHOPPING CART ITEMS -->
-        <div class="shopping-cart-items shoppingCartItemsContainer"></div>
-        <!-- ? END SHOPPING CART ITEMS -->
+<!--         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ -->     <form action="https://localhost/mp" method="POST">
+          <div class="shopping-cart-items shoppingCartItemsContainer">
+            
+          </div>
+        <!-- ? END SHOPPING CART ITEMS --> 
         <!-- START TOTAL -->
         <div class="row">
           <div class="col-12">
@@ -310,20 +317,23 @@
               </div>
               <button
                 class="btn btn-success ml-auto comprarButton"
-                type="button"
+                type="submit"
+                value="comprar"
                 data-toggle="modal"
                 data-target="#comprarModal"
+                id="buttonComprarFetch"
               >
                 Comprar
               </button>
             </div>
           </div>
         </div>
+      </form>
         <!-- END TOTAL -->
         <!-- START MODAL COMPRA -->
         <div
           class="modal fade"
-          id="comprarModal"
+          id="#"
           tabindex="-1"
           aria-labelledby="comprarModalLabel"
           aria-hidden="true"
@@ -363,6 +373,8 @@
     </section>
     <!-- END SECTION SHOPPING CART -->
 
+    
+
     <!-- FOOTER -->
 
     <footer class="footer">
@@ -377,7 +389,6 @@
       <ul class="row">
         <li>
           <h5>Mapa del Sitio</h5>
-
           <ul>
             <li>NOSOTROS</li>
             <li>SUCURSALES</li>
