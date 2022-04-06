@@ -64,9 +64,11 @@ function createDomElement(item) {
         </button>
         </div>
               <h5 class="item-title">${item.title}</h5>
-              <p class="item-details">${item.details}</p>
+              <h5 class="item-details">
+              <a data-toggle="modal" data-target="#detalleProductos" href="#">+info</a>
+              </h5>
               <h4 class="item-price">${item.precio}</h4>
-              <button class="item-button btn btn-primary addToCart"><p>12 cuotas</p>$${item.precio}</button>
+              <button class="item-button btn btn-primary addToCart"><p>Añadir a Carrito</p>$${item.precio}</button>
             </div>
         </div>
     </div>`;
@@ -106,7 +108,11 @@ const filtrar = (event) => {
 boton.addEventListener("click", filtrar);
 formulario.addEventListener("keyup", filtrar);
 
-
 /* CREACION DEL MENU DE CATEGORIAS */
+
+function abre(T) {
+  var ruta = T.src.replace("/s90-Ic42/","/s590-Ic42/"); 
+  document.querySelector("#visor img").src = `${item.image}`; 
+  }
 
 

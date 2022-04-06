@@ -31,6 +31,9 @@ function addToCartClicked(event) {
   addItemToShoppingCart(itemTitle, itemPrice, itemImage);
 
   console.log(itemsProductosJson);
+
+const guardarLocalStorage = localStorage.setItem('Titulo', itemTitle)
+console.log(guardarLocalStorage)
 }
 
 function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {

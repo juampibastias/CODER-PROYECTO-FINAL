@@ -51,7 +51,7 @@
   padding-top: 0px;
   padding-bottom: 0;
   background-color: #534080;
-  border-radius: 10%;
+  border-radius: 10px;
   border: #534080;
 }
 
@@ -98,6 +98,10 @@
   padding: 5px;
 }
 
+.shopping-cart-price p{
+  color: #534080;
+}
+
 .shopping-cart-total {
   min-height: 96px;
 }
@@ -106,3 +110,54 @@ h4{
   color: white;
 }
 
+/* galeria */
+
+html {
+  color: #eb92fb; 
+  background-color: #534080; 
+  }
+  #muestra {
+  position: relative; 
+  margin: 1rem auto; 
+  width: 585px; height: 375px; 
+  border: solid 5px #534080; 
+  background-color: #eb92fb; 
+  overflow: hidden; 
+  box-shadow: 0 0 0 10px #534080, 10px 10px 20px 8px rgba(0,0,0,.2); 
+  }
+  #selectores {
+  position: absolute; 
+  left: 0; top: 0; 
+  width: 100px; height: 440px; 
+  padding: 2px; 
+  font-size: 0; 
+  overflow: hidden; 
+  background-color: #534080; 
+  }
+  #selectores img{
+  margin: none; 
+  border: solid 3px transparent; 
+  cursor: pointer; 
+  }
+  #visor {
+  position: absolute; 
+  font-size: 0; 
+  left: 100px; top: 0; 
+  width: 590px; height: 430px; 
+  }
+  #visor:before {
+  content: 'Pincha las miniaturas. Gracias.';
+  position: absolute;
+  left: 0; right: 0; top: 48%;
+  font-size: 1.7rem;
+  color: #a03271;
+  text-align: center;
+  }
+  #visor img {
+  position: absolute; 
+  top: 0; left: 0; 
+  }
+  p {
+  font-weight: bold; 
+  }
+  

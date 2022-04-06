@@ -21,7 +21,6 @@ mercadopago.configure({
 /* RUTA MERCADOPAGO */
 
 router.post("/", (req, res) => {
-  //console.log(req.body.title);
   let preference = {
     items: [
       {
@@ -34,7 +33,6 @@ router.post("/", (req, res) => {
   mercadopago.preferences
     .create(preference)
     .then(function (response) {
-      console.log(response.body);
       res.redirect(response.body.init_point);
     })
     .catch(function (error) {

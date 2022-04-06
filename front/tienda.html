@@ -208,7 +208,7 @@
         >
       </li>
     </ul>
-
+    
     <!-- NAV DE LA TIENDA Y PAGINACION -->
 
     <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
@@ -278,10 +278,8 @@
           </div>
         </div>
         <!-- ? START SHOPPING CART ITEMS -->
-<!--         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- -->     <form action="https://localhost/mp" method="POST">
+        <form action="https://localhost/mp" method="POST">
           <div class="shopping-cart-items shoppingCartItemsContainer">
-            
           </div>
         <!-- ? END SHOPPING CART ITEMS --> 
         <!-- START TOTAL -->
@@ -329,52 +327,53 @@
           </div>
         </div>
       </form>
-        <!-- END TOTAL -->
-        <!-- START MODAL COMPRA -->
-        <div
-          class="modal fade"
-          id="#"
-          tabindex="-1"
-          aria-labelledby="comprarModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="comprarModalLabel">
-                  Gracias por su compra
-                </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>Pronto recibirá su pedido</p>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END MODAL COMPRA -->
       </div>
     </section>
     <!-- END SECTION SHOPPING CART -->
 
-    
+    <!-- START MODAL START PRODUCTS -->
+<!-- Modal -->
+<div class="modal" id="detalleProductos" tabindex="-1" role="dialog" aria-labelledby="titleProducto" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+  <h5>PRODUCTO</h5>
+</div>
+  <div class="modal-body">
+    <div class="alert alert">
+      <h5 id="titleProducto"></h5>
+      <!-- START GALERIE -->
+      <div id="muestra">
+        <div id="selectores">
+         <img onclick="abre(this)" src="">
+         <img onclick="abre(this)" src="">
+         <img onclick="abre(this)" src="">
+         <img onclick="abre(this)" src="">
+         <img onclick="abre(this)" src="">
+         <img onclick="abre(this)" src="">
+        </div>
+        <div id="visor">
+          <img src="">
+        </div>
+       </div>       
+      <!-- END GALERIE -->
 
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-success" type="button" data-dismiss="modal" data-target="#buttonAgregarCarrito">
+        <h6>Ir al carrito</h6>
+      </button>
+      <button class="btn btn-success" type="button" data-dismiss="modal" data-target="#buttonAgregarCarrito">
+        <h6>Agregar al carrito</h6>
+      </button>
+      <button class="btn btn-info" type="button" data-dismiss="modal">
+        <h6>Seguir comprando</h6>
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
     <!-- FOOTER -->
 
     <footer class="footer">
